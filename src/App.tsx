@@ -1,4 +1,4 @@
-import { Home, LazyImage } from '@/components/pages';
+import { GuidedTour, Home, LazyImage } from '@/components/pages';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter(
@@ -10,6 +10,10 @@ const router = createBrowserRouter(
     {
       path: '/lazy-image',
       element: <LazyImage />,
+    },
+    {
+      path: '/guided',
+      element: <GuidedTour />,
     },
   ],
   {

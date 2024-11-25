@@ -7,6 +7,10 @@ export function Home() {
       name: 'Image lazy loading',
       href: '/lazy-image',
     },
+    {
+      name: 'Guided Tour',
+      href: '/guided',
+    },
   ];
 
   const linkElements = links.map((link) => (
