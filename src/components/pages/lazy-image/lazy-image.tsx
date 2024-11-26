@@ -32,10 +32,15 @@ export function LazyImage() {
       <div
         className="w-[calc(50%-1rem)] h-96 mx-2 my-1 bg-cover bg-no-repeat relative after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full animate-pulse"
         key={image.name}
-        style={{ backgroundImage: `url(./images/thumbs/${image.name})` }}
+        style={{ backgroundImage: `url(/miscellaneous/public/images/thumbs/${image.name})` }}
         ref={(el) => el && ref.current.push(el)}
       >
-        <img src={`images/${image.name}`} alt="Image" className="w-full h-full invisible" loading="lazy" />
+        <img
+          src={`/miscellaneous/public/images/${image.name}`}
+          alt="Image"
+          className="w-full h-full invisible"
+          loading="lazy"
+        />
       </div>
     ));
   };

@@ -1,6 +1,6 @@
-import { useCookie } from '@/components/hooks/cookie';
-import { useGuidedTour } from '@/components/hooks/guided-tour';
 import { Button } from '@/components/ui/button';
+import { useCookie } from '@/hooks/cookie';
+import { useGuidedTour } from '@/hooks/guided-tour';
 import { Dispatch, SetStateAction, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Footer, NavigationDemo, TableDemo } from './demo-components';

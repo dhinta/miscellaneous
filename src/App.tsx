@@ -1,5 +1,6 @@
 import { GuidedTour, Home, LazyImage } from '@/components/pages';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { ScrollAnimations } from './components/pages/scroll-animations/scroll-animations';
 
 const router = createHashRouter(
   [
@@ -10,6 +11,10 @@ const router = createHashRouter(
     {
       path: '/lazy-image',
       element: <LazyImage />,
+    },
+    {
+      path: '/scroll-to-view',
+      element: <ScrollAnimations />,
     },
     {
       path: '/guided',

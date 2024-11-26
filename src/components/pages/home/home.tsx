@@ -8,6 +8,10 @@ export function Home() {
       href: '/lazy-image',
     },
     {
+      name: 'Scroll Animations',
+      href: '/scroll-to-view',
+    },
+    {
       name: 'Guided Tour',
       href: '/guided',
     },
