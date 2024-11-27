@@ -1,0 +1,24 @@
+.rotateY-180 {
+  transform: rotateY(180deg);
+}
+
+.rotateY-0 {
+  transform: rotateY(0deg);
+}
+
+.launch-sass {
+  animation: border-shadow-animation 5s infinite;
+}
+
+@keyframes border-shadow-animation {
+  0% {
+    box-shadow: 0 0 0 0 #302b2b;
+  }
+  50% {
+    box-shadow: 0 0 0 5px #302b2b;
+    border-radius: 50px;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #302b2b;
+  }
+}

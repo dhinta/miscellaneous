@@ -5,31 +5,30 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-import { Link } from 'react-router-dom';
 
 export function ScrollPageNavigationMenu() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem className="shadow-sm shadow-slate-300">
-          <Link to="/">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Features</NavigationMenuLink>
-          </Link>
+          <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+            Features
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Products</NavigationMenuLink>
-          </Link>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">
+            Products
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>About Us</NavigationMenuLink>
-          </Link>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">
+            About Us
+          </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Contact Us</NavigationMenuLink>
-          </Link>
+          <NavigationMenuLink className={navigationMenuTriggerStyle()} href="/">
+            Contact Us
+          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
